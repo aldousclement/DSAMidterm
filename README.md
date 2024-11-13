@@ -9,12 +9,9 @@
 <div style="display: flex;">
 
   <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
-    ## Code
-
-    ```javascript
+    
     const name = "GeekforGeeks";
     const ele = <h1>Welcome to {name}</h1>;
-    ```
 
 </div>
 
