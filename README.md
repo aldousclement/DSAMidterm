@@ -184,7 +184,9 @@ Or, you can install all of them in single command as −
 
 </div>
 
+
 Or, you can install all of them in single command as −
+
 
 <div style="display: flex;">
 
