@@ -78,3 +78,57 @@ npx create-react-app foldername
     cd foldername
 
 </div>
+
+### STEP BY STEP HOW TO SET UP REACT JS
+
+# Installing ReactJS using webpack and babel
+
+- Webpack is a module bundler (manages and loads independent modules). It takes dependent modules and compiles them to a single (file) bundle. You can use this bundle while developing apps using command line or, by configuring it using webpack.config file.
+
+- Babel is a JavaScript compiler and transpiler. It is used to convert one source code to other. Using this you will be able to use the new ES6 features in your code where, babel converts it into plain old ES5 which can be run on all browsers.
+
+# Step 1 - Create the Root Folder
+- ## Create a folder with name reactApp on the desktop to install all the required files, using the mkdir command.
+
+<div style="display: flex;">
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
+    
+   C:\Users\username\Desktop>mkdir reactApp
+   C:\Users\username\Desktop>cd reactApp
+
+</div>
+
+- To create any module, it is required to generate the package.json file. Therefore, after Creating the folder, we need to create a package.json file. To do so you need to run the npm init command from the command prompt.
+
+<div style="display: flex;">
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
+    
+    C:\Users\username\Desktop\reactApp>npm init
+
+</div>
+
+- This command asks information about the module such as packagename, description, author etc. you can skip these using the –y option.
+
+<div style="display: flex;">
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
+    
+    C:\Users\username\Desktop\reactApp>npm init -y
+Wrote to C:\reactApp\package.json:
+{
+   "name": "reactApp",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC"
+}
+
+</div>
+
