@@ -168,6 +168,7 @@ Or, you can install all of them in single command as −
 # Step 3 - Install webpack
 - Since we are using webpack to generate bundler install webpack, webpack-dev-server and webpack-cli.
 
+<div style="display: flex;">
 
   <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
     
@@ -179,6 +180,7 @@ C:\Users\username\Desktop\reactApp>npm install webpack-cli --save
 
 Or, you can install all of them in single command as −
 
+<div style="display: flex;">
 
   <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
     
