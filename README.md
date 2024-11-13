@@ -114,10 +114,10 @@ npx create-react-app foldername
 <div style="display: flex;">
 
   <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
-    
+  
     C:\Users\username\Desktop\reactApp>npm init -y
     Wrote to C:\reactApp\package.json:
-{
+
    "name": "reactApp",
    "version": "1.0.0",
    "description": "",
@@ -128,7 +128,7 @@ npx create-react-app foldername
    "keywords": [],
    "author": "",
    "license": "ISC"
-}
+
 
 </div>
 
