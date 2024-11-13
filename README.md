@@ -15,31 +15,66 @@
 
 </div>
 
-2. Declarative Programming:
+2. Virtual DOM:
 
-- With React, developers describe how the UI should look at any given time based on the app's state. React then handles the updates efficiently, making the development process more intuitive and predictable.
+- DOM stands for Document Object Model. It is the most important part of the web as it divides into modules and executes the code. Usually, JavaScript Frameworks updates the whole DOM at once, which makes the web application slow. But react uses virtual DOM which is an exact copy of real DOM. Whenever there is a modification in the web application, the whole virtual DOM is updated first and finds the difference between real DOM and Virtual DOM.
 
-3. Virtual DOM:
+3. One-way Data Binding:
 
-- React uses a Virtual DOM, which is a lightweight copy of the actual DOM. When a component's state changes, React first updates the Virtual DOM and then compares it with the real DOM. This reconciliation process minimizes the number of actual DOM manipulations, improving app performance.
+- One-way data binding, the name itself says that it is a one-direction flow. The data in react flows only in one direction i.e. the data is transferred from top to bottom i.e. from parent components to child components. The properties(props) in the child component cannot return the data to its parent component but it can have communication with the parent components to modify the states according to the provided inputs.
 
-4. Unidirectional Data Flow:
+4. Performance:
 
-- React enforces one-way data binding, meaning data flows in a single direction, typically from parent components to child components. This makes it easier to understand how data changes and where the changes originate.
+- As we discussed earlier, react uses virtual DOM and updates only the modified parts. So , this makes the DOM to run faster. DOM executes in memory so we can create separate components which makes the DOM run faster.
 
-5. JSX (JavaScript XML):
+5. Extension:
 
-- React employs JSX, a syntax extension that allows you to write HTML-like code within JavaScript. JSX makes it easier to create and visualize the structure of the UI alongside the logic for handling user interactions.
+- React has many extensions that we can use to create full-fledged UI applications. It supports mobile app development and provides server-side rendering. React is extended with Flux, Redux, React Native, etc. which helps us to create good-looking UI.
  
-6. State and Props:
+6. Conditional Statements:
 
-- State represents mutable data specific to a component, and React automatically re-renders the component when its state changes.
-Props are immutable data passed from a parent component to a child. They enable communication between components and are read-only.
+- JSX allows us to write conditional statements. The data in the browser is displayed according to the conditions provided inside the JSX.
 
-7. Hooks:
+### Syntax:
+<div style="display: flex;">
 
-- Introduced in React 16.8, Hooks allow functional components to manage state and side effects without needing class-based components. Popular hooks include useState for state management and useEffect for handling side effects like data fetching or subscribing to external services.
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
+    
+    const age = 12;
+if (age >= 10)
+{ 
+    <p> Greater than { age } </p>;
+} 
+else 
+{ 
+    <p> { age } </p>;
+}
 
-8. Ecosystem and Tools:
 
-- React has a rich set of accompanying tools and libraries, including React Router for managing navigation and Redux for centralized state management. There’s also React Native, which extends React’s principles to mobile app development.
+</div>
+
+7. Components:
+
+- React.js divides the web page into multiple components as it is component-based. Each component is a part of the UI design which has its own logic and design as shown in the below image. So the component logic which is written in JavaScript makes it easy and run faster and can be reusable.
+
+8. Simplicity:
+
+- React.js is a component-based which makes the code reusable and React.js uses JSX which is a combination of HTML and JavaScript. This makes code easy to understand and easy to debug and has less code.
+## Steps to Create React Application:
+### Step 1: Create a react application by using the following command:
+<div style="display: flex;">
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
+    
+npx create-react-app foldername
+
+</div>
+
+### Step 2: Change your directory to the newly created folder.
+<div style="display: flex;">
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
+    
+    cd foldername
+
+</div>
