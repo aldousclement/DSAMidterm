@@ -6,9 +6,25 @@
 1. JSX(JavaScript Syntax Extension):
 
 - JSX is a combination of HTML and JavaScript. You can embed JavaScript objects inside the HTML elements. JSX is not supported by the browsers, as a result, Babel compiler transcompile the code into JavaScript code. JSX makes codes easy and understandable. It is easy to learn if you know HTML and JavaScript.
-<div style="border: 2px solid #ccc; padding: 15px; margin-bottom: 20px;">
-const name="GeekforGeeks";
-const ele = <h1>Welcome to {name}</h1>;
+<div style="display: flex;">
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
+    ## Code
+
+    ```javascript
+    const name = "GeekforGeeks";
+    const ele = <h1>Welcome to {name}</h1>;
+    ```
+  </div>
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc;">
+    ## Output or Explanation
+
+    The code above declares a constant `name` with the value `"GeekforGeeks"`, 
+    and then creates a JSX element `ele` that renders an `h1` tag containing 
+    the text "Welcome to GeekforGeeks".
+  </div>
+
 </div>
 
 2. Declarative Programming:
