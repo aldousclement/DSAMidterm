@@ -227,36 +227,29 @@ C:\Users\username\Desktop\reactApp>type nul > .babelrc
 # Step 6 - Set Compiler, Server and Loaders
 - Open webpack-config.js file and add the following code. We are setting webpack entry point to be main.js. Output path is the place where bundled app will be served. We are also setting the development server to 8001 port. You can choose any port you want.
 
-webpack.config.js
+# Step 7 - index.html
+- This is just regular HTML. We are setting div id = "app" as a root element for our app and adding index_bundle.js script, which is our bundled app file.
 
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+# Step 8 − App.jsx and main.js
+- This is the first React component. We will explain React components in depth in a subsequent chapter. This component will render Hello World.
 
-module.exports = {
-   entry: './main.js',  // Entry file for the application
-   output: {
-      path: path.join(__dirname, '/dist'),  // Output directory (fixed from '/bundle' to '/dist')
-      filename: 'bundle.js'  // Name of the output bundled JavaScript file
-   },
-   devServer: {
-      inline: true,  // Enable inline mode for the development server
-      port: 8001,  // Port to run the dev server on
-   },
-   module: {
-      rules: [
-         {
-            test: /\.jsx?$/,  // Regex for JavaScript and JSX files
-            exclude: /node_modules/,  // Exclude node_modules folder
-            loader: 'babel-loader',  // Use Babel to transpile JS/JSX
-            options: {
-               presets: ['@babel/preset-env', '@babel/preset-react'],  // Updated Babel presets
-            }
-         }
-      ]
-   },
-   plugins: [
-      new HtmlWebpackPlugin({
-         template: './index.html',  // Use index.html as a template for the output
-      })
-   ]
-}
+# Step 9 - Running the Server
+- The setup is complete and we can start the server by running the following command.
+
+# Step 10 - Generating the bundle
+- Finally, to generate the bundle you need to run the build command in the command prompt as −
+
+<div style="display: flex;">
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
+    
+C:\Users\Tutorialspoint\Desktop\reactApp>npm run build
+
+</div>
+
+
+
+# link for all the answer
+[What are the features of ReactJS? - GeeksforGeeks](https://www.geeksforgeeks.org/what-are-the-features-of-reactjs/)
+
+[ReactJS Environment Setup - TutorialsPoint](https://www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm)
