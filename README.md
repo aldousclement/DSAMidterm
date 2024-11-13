@@ -174,9 +174,11 @@ Or, you can install all of them in single command as −
     C:\Users\username\Desktop\reactApp> npm install webpack --save
   </div>
   
-  <div style="flex: 1; padding: 10px; border: 2px solid #ccc;">
+  <div style="flex: 1; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
     C:\Users\username\Desktop\reactApp> npm install webpack-dev-server --save
-    <br><br>
+  </div>
+  
+  <div style="flex: 1; padding: 10px; border: 2px solid #ccc;">
     C:\Users\username\Desktop\reactApp> npm install webpack-cli --save
   </div>
 
