@@ -208,3 +208,55 @@ Or, you can install all of them in single command as −
     const ele = <h1>Welcome to {name}</h1>;
 
 </div>
+
+# Step 5 - Create the Files
+- To complete the installation, we need to create certain files namely, index.html, App.js, main.js, webpack.config.js and, .babelrc. You can create these files manually or, using command prompt.
+
+<div style="display: flex;">
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
+    
+   C:\Users\username\Desktop\reactApp>type nul > index.html
+C:\Users\username\Desktop\reactApp>type nul > App.js
+C:\Users\username\Desktop\reactApp>type nul > main.js
+C:\Users\username\Desktop\reactApp>type nul > webpack.config.js
+C:\Users\username\Desktop\reactApp>type nul > .babelrc
+
+</div>
+
+# Step 6 - Set Compiler, Server and Loaders
+- Open webpack-config.js file and add the following code. We are setting webpack entry point to be main.js. Output path is the place where bundled app will be served. We are also setting the development server to 8001 port. You can choose any port you want.
+
+webpack.config.js
+
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+   entry: './main.js',  // Entry file for the application
+   output: {
+      path: path.join(__dirname, '/dist'),  // Output directory (fixed from '/bundle' to '/dist')
+      filename: 'bundle.js'  // Name of the output bundled JavaScript file
+   },
+   devServer: {
+      inline: true,  // Enable inline mode for the development server
+      port: 8001,  // Port to run the dev server on
+   },
+   module: {
+      rules: [
+         {
+            test: /\.jsx?$/,  // Regex for JavaScript and JSX files
+            exclude: /node_modules/,  // Exclude node_modules folder
+            loader: 'babel-loader',  // Use Babel to transpile JS/JSX
+            options: {
+               presets: ['@babel/preset-env', '@babel/preset-react'],  // Updated Babel presets
+            }
+         }
+      ]
+   },
+   plugins: [
+      new HtmlWebpackPlugin({
+         template: './index.html',  // Use index.html as a template for the output
+      })
+   ]
+}
