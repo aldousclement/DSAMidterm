@@ -15,15 +15,6 @@
     const name = "GeekforGeeks";
     const ele = <h1>Welcome to {name}</h1>;
     ```
-  </div>
-
-  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc;">
-    ## Output or Explanation
-
-    The code above declares a constant `name` with the value `"GeekforGeeks"`, 
-    and then creates a JSX element `ele` that renders an `h1` tag containing 
-    the text "Welcome to GeekforGeeks".
-  </div>
 
 </div>
 
