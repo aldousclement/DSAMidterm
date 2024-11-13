@@ -116,7 +116,7 @@ npx create-react-app foldername
   <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
     
     C:\Users\username\Desktop\reactApp>npm init -y
-Wrote to C:\reactApp\package.json:
+    Wrote to C:\reactApp\package.json:
 {
    "name": "reactApp",
    "version": "1.0.0",
