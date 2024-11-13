@@ -1,11 +1,25 @@
 # REACT JS
 
 ## WHAT IS REACT JS?
-
+- Created by Facebook, ReactJS is a JavaScript library designed for crafting dynamic and interactive applications, elevating UI/UX for web and mobile platforms. Operating as an open-source, component-based front-end library, React is dedicated to UI design and streamlines code debugging by employing a component-oriented approach.
 ### KEY FEATURES OF REACT JS
-1. Component-Based Architecture:
+1. JSX(JavaScript Syntax Extension):
 
-- React allows you to create UI elements as self-contained components. These components are independent, reusable, and can manage their own state, leading to a more modular and maintainable codebase.
+- JSX is a combination of HTML and JavaScript. You can embed JavaScript objects inside the HTML elements. JSX is not supported by the browsers, as a result, Babel compiler transcompile the code into JavaScript code. JSX makes codes easy and understandable. It is easy to learn if you know HTML and JavaScript.
+<div style="display: flex;">
+
+  <div style="flex: 50%; padding: 10px;">
+    ## Column 1
+    This is the content for the first column. You can add **text**, *images*, or other Markdown elements here.
+  </div>
+const name="GeekforGeeks";
+const ele = <h1>Welcome to {name}</h1>;
+  <div style="flex: 50%; padding: 10px;">
+    ## Column 2
+    This is the content for the second column. Similarly, add more **text**, *images*, etc.
+  </div>
+
+</div>
 
 2. Declarative Programming:
 
