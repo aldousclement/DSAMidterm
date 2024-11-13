@@ -143,3 +143,58 @@ npx create-react-app foldername
 
 </div>
 
+# Step 2 - install React and react dom
+- Since our main task is to install ReactJS, install it, and its dom packages, using install react and react-dom commands of npm respectively. You can add the packages we install, to package.json file using the --save option.
+
+<div style="display: flex;">
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
+    
+    C:\Users\Tutorialspoint\Desktop\reactApp>npm install react --save
+C:\Users\Tutorialspoint\Desktop\reactApp>npm install react-dom --save
+
+</div>
+
+Or, you can install all of them in single command as −
+
+<div style="display: flex;">
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
+    
+  C:\Users\username\Desktop\reactApp>npm install react react-dom --save
+
+</div>
+
+# Step 3 - Install webpack
+- Since we are using webpack to generate bundler install webpack, webpack-dev-server and webpack-cli.
+
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
+    
+  C:\Users\username\Desktop\reactApp>npm install webpack --save
+C:\Users\username\Desktop\reactApp>npm install webpack-dev-server --save
+C:\Users\username\Desktop\reactApp>npm install webpack-cli --save
+
+</div>
+
+Or, you can install all of them in single command as −
+
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
+    
+  C:\Users\username\Desktop\reactApp>npm install webpack webpack-dev-server webpack-cli --save
+
+
+</div>
+
+# Step 4 - Install babel
+- Install babel, and its plugins babel-core, babel-loader, babel-preset-env, babel-preset-react and, html-webpack-plugin
+
+<div style="display: flex;">
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
+    
+    const name = "GeekforGeeks";
+    const ele = <h1>Welcome to {name}</h1>;
+
+</div>
