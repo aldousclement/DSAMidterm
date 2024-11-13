@@ -114,21 +114,32 @@ npx create-react-app foldername
 <div style="display: flex;">
 
   <div style="flex: 50%; padding: 10px; border: 2px solid #ccc; margin-right: 10px;">
-  
+    ## Command
+
+    ```bash
     C:\Users\username\Desktop\reactApp>npm init -y
+    ```
+  </div>
+
+  <div style="flex: 50%; padding: 10px; border: 2px solid #ccc;">
+    ## Output
+
+    ```json
     Wrote to C:\reactApp\package.json:
-
-   "name": "reactApp",
-   "version": "1.0.0",
-   "description": "",
-   "main": "index.js",
-   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-   },
-   "keywords": [],
-   "author": "",
-   "license": "ISC"
-
+    {
+       "name": "reactApp",
+       "version": "1.0.0",
+       "description": "",
+       "main": "index.js",
+       "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1"
+       },
+       "keywords": [],
+       "author": "",
+       "license": "ISC"
+    }
+    ```
+  </div>
 
 </div>
 
